@@ -1,7 +1,7 @@
 #! /bin/bash
 
-a=10
-b=20
+a=$1
+b=$2
 
  echo total=$(($a+$b))
 
