@@ -18,7 +18,7 @@ then
     exit 1
 else 
     echo : "your are root user"
-
+fi
 yum install mysql -y 
 
 validate $? "mysql" # $? its save the exit command status 
