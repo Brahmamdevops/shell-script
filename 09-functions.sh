@@ -3,7 +3,7 @@
 ID=$(id -u)
 
 validate(){
-    if[ $1 -ne 0 ]
+    if [ $1 -ne 0 ]
     then
         echo : "installing $2 failure"
     else
@@ -11,7 +11,7 @@ validate(){
 }
 fi
 
-if[ $ID -ne 0 ]
+if [ $ID -ne 0 ]
 then
     echo : "please intsall with root user"
     exit 1
