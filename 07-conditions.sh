@@ -1,11 +1,11 @@
 #! /bin/bash
 
-a=10
+a=$1
 
-if [$a -le 10]
+if [$a -lt   10]
 then
-echo : "its true"
+echo : "given is lessthan 10"
 
 else 
-echo "a greater than 10 "
+echo "its "
 fi
