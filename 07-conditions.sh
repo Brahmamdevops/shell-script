@@ -8,5 +8,4 @@ echo : "its true"
 
 else 
 echo "a greater than 10 "
-
 fi
