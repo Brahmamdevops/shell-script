@@ -14,3 +14,9 @@ fi
 yum install mysql -y
 
 
+if [ $? -ne 0 ]
+    then
+        echo : "installing package failure"
+    else
+        echo : "istalling package success"
+fi
