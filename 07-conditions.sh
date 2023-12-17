@@ -2,7 +2,7 @@
 
 a=$1
 
-if [ $a -gt   10 ]
+if [ $a -ge   10 ]
 then
     echo : "given is value grathan 10 "
 else 
