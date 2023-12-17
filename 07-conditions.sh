@@ -2,7 +2,7 @@
 
 a=10
 
-if ($a -le 10)
+if [$a -le 10]
 then
 echo : "its true"
 
