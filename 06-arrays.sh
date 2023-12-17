@@ -1,6 +1,6 @@
 #! /bin/bash
 
 
-a=("ram""laxman""sita")
+names=("ram" "laxman" "sita")
 
-echo :" names ${a[0]}"
+echo :"first index of array is ${names[0]}"
