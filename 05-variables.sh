@@ -11,7 +11,7 @@ read  password
 echo : "this is my $username, and $password "
 
 
-read -s username
+read -s username #if we give -s what we are tying its secure data or not visible or not displaying
 
 echo : "enter your password"
 
