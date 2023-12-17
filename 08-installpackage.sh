@@ -9,3 +9,5 @@ if [ $ID -ne 0 ]
     else
         echo : "i am root user installing package"
 fi
+
+yum install mysql -y
