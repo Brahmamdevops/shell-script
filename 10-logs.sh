@@ -13,19 +13,19 @@ N="\e[0m"
 validate(){
     if [ $1 -ne 0 ]
     then
-        echo : " $R installing $2 failure $N"
+        echo :-e " $R installing $2 failure $N"
     else
-        echo : " $G installing $2 success $N "
+        echo : -e " $G installing $2 success $N "
 
     fi
 }
 
 if [ $ID -ne 0 ]
 then
-    echo : " $R please intsall with root user"
+    echo : -e " $R please intsall with root user"
     exit 1
 else 
-    echo : " $G your are root user"
+    echo : -e " $G your are root user"
 fi
 yum install mysql -y &>> $LOGFILE # log data saved in this file
 
