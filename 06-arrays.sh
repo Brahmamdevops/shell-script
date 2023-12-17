@@ -3,4 +3,4 @@
 
 a=("ram","laxman","sita")
 
-echo :$a[0]
+echo :" names ${a[0]}"
