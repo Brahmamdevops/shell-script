@@ -2,10 +2,9 @@
 
 a=$1
 
-if [$a -lt   10]
+if [ $a -gt   10 ]
 then
-echo : "given is lessthan 10"
-
+    echo : "given is value grathan 10 "
 else 
-echo "its "
+    echo "its lessthan 10"
 fi
