@@ -3,4 +3,4 @@
 
 names=("ram" "laxman" "sita")
 
-echo :"first index of array is ${names[0]}"
+echo :" first index of array is ${names[0]}"
