@@ -21,8 +21,8 @@ else
 
 yum install mysql -y 
 
-vadilate $? "mysql" # $? its save the exit command status 
+validate $? "mysql" # $? its save the exit command status 
 
-yum istall git -y
+yum install git -y
 
-vadilate $? "git"
+validate $? "git"
