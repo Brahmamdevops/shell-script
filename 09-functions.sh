@@ -8,8 +8,9 @@ validate(){
         echo : "installing $2 failure"
     else
         echo : " installing $2 success"
+
+    fi
 }
-fi
 
 if [ $ID -ne 0 ]
 then
