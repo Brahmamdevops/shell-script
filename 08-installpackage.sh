@@ -3,10 +3,9 @@
 
 ID=$(id -u)
 
-if [ $ID -eq 0 ]
+if [ $ID -ne 0 ]
     then 
-        echo : "i am root user installing package"
-    else
         echo : "please install with root user"
-
+    else
+        echo : "i am root user installing package"
 fi
