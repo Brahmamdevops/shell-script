@@ -3,5 +3,7 @@
 a=$1
 b=$2
 
-echo : sum=$a+$b
+echo : total=$a+$b
+
+echo : sum=total
 
