@@ -23,7 +23,7 @@ validate(){
 
 if [ $ID -ne 0 ]
 then
-    echo : "please install with root user"
+    echo : " $R please install with root user $N"
     exit 1
 else
     echo : "you are root user"
