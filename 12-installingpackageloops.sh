@@ -1,6 +1,6 @@
 #1/bin/bash
 
-ID=(id -u)
+ID=$(id -u)
 
 echo " $0 is started"
 TIMESTAMP=$(date +%F-%H-%M-%S)
@@ -14,9 +14,9 @@ N="\e[0m"
 validate(){
     if [ $1 -ne 0 ]
     then
-        echo : -e " $R installing $2 error $N"
+        echo : -e "$R installing $2 error $N"
     else
-        echo : -e " $G installing $2 success $N"
+        echo : -e "$G installing $2 success $N"
     fi
 }
 
@@ -30,10 +30,16 @@ else
 fi
 
 
-for i in $@
+for package in $@
 do
-    echo " installing $i" &>> $LOGFILE
-    validate $? "$i"
+    yum list installed $package
+    if [ $? -ne 0 ]
+    then 
+        yum install $package -y &>> $LOGFILE
+        validate $? "$package"
+    else
+        echo : -e "$N $package alreay installed $N"
+    fi
 done
 
 
