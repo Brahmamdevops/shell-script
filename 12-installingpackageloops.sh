@@ -8,7 +8,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 R="\e[31m"
 G="\e[32m"
-Y=$"\e[33m"
+Y="\e[33m"
 N="\e[0m"
 
 validate(){
@@ -16,14 +16,14 @@ validate(){
     then
         echo : -e " $R installing $2 error $N"
     else
-        echo : " $G installing $2 success $N"
+        echo : -e " $G installing $2 success $N"
     fi
 }
 
 
 if [ $ID -ne 0 ]
 then
-    echo : " $R please install with root user $N"
+    echo : -e " $R please install with root user $N"
     exit 1
 else
     echo : "you are root user"
