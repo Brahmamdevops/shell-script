@@ -3,14 +3,7 @@
 
 ID=$(id -u)
 
-validate(){
-if [ $1 -ne 0 ]
-then
-    echo : "installing $2  failure"
-else
-    echo : "istalling $2  success"
-fi
-}
+
 
 if [ $ID -ne 0 ]
 then 
@@ -22,11 +15,12 @@ fi
 
 yum install mysql -y
 
-validate $? "mysql"
-
-yum install git -y
-
-validate $? "git"
+if [ $? -ne 0 ]
+then
+    echo : "installing package  failure"
+else
+    echo : "istalling package  success"
+fi
 
 
 
